@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  min-height: 100vh;
+
+}
+
+main {
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-card {
+  cursor: pointer;
+  scale: 1;
+  opacity: .8;
+  transition: scale .3s ease-in, opacity .4s ease-out, color .5s ease-out;
+}
+
+.food-card:hover {
+  scale: 1.02;
+  opacity: 1;
+  color: #fff;
+}
+
+
+img.food {
+  outline: 3px solid rgb(13, 202, 240);
+  outline-offset: -1.2rem;
+}
+
+.img-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.img-div button {
+  position: absolute;
+  bottom: .4rem;
+  box-shadow: 2px 2px 5px rgb(33, 37, 41 );
+  transition: bottom .3s ease-in-out;
+}
+
+.food-card:hover .img-div button {
+  bottom: 20%;
+  color: #fff;
+}
+
+
