@@ -4,7 +4,9 @@ import { Button } from 'react-bootstrap'
 const RecipeTags = ({item}) => {
 
   return (
-    <Button className='btn btn-info'>{item}</Button>
+    <div >
+      <Button className='btn btn-dark text-info'>{item}</Button>
+    </div>
   )
 }
 export default RecipeTags

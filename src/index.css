@@ -63,4 +63,26 @@ img.food {
   color: #fff;
 }
 
+p {
+  text-align: justify;
+}
+
+.recipe-card {
+  max-width: 800px;
+  scale: 1;
+  transition: scale .3s ease-out;
+}
+
+.recipe-card:hover {
+  scale: 1.02;
+}
+
+.recipe-card img {
+  max-width: 500px;
+  margin-inline: auto;
+  margin-block: 1rem;
+  outline: 3px solid rgb(13, 202, 240);
+  outline-offset: -1.2rem;
+}
+
 
