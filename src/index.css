@@ -25,6 +25,15 @@ main {
   align-items: center;
 }
 
+/*Countries*/
+
+.country-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/*Recipes*/
+
 .food-card {
   cursor: pointer;
   scale: 1;
@@ -85,4 +94,15 @@ p {
   outline-offset: -1.2rem;
 }
 
+  /*----Dictionary------*/
+
+  .dictionary-card h2, h3{
+    text-align: start;
+    text-transform: capitalize;
+  }
+
+  .dictionary-card li {
+    text-align: start;
+    list-style-image: -webkit-linear-gradient(#000, rgb(13, 202, 240));
+  }
 

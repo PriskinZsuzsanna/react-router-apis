@@ -9,6 +9,7 @@ import Home from './Pages/Home';
 import Countries from './Pages/Countries';
 import RecipePage from './Pages/RecipePage';
 import Recipe from './Pages/Recipe';
+import DictionaryPage from './Pages/DictionaryPage';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
                   <Nav.Link as={Link} to='/jokes'>Jokes</Nav.Link>
                   <Nav.Link as={Link} to='/countries'>Countries</Nav.Link>
                   <Nav.Link as={Link} to='/recipes'>Recipes</Nav.Link>
+                  <Nav.Link as={Link} to='/dictionary'>Dictionary</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -44,6 +46,7 @@ function App() {
             <Route path='/countries' element={<Countries />} />
             <Route path='/recipes' element={<RecipePage />}/>
             <Route path='/recipes/:id' element={<Recipe />}/>
+            <Route path='/dictionary' element={<DictionaryPage />} />
           </Routes>
         </main>
       </div>
