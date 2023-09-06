@@ -37,7 +37,7 @@ const DictionaryPage = () => {
                 <Container className='px-3'>
                     <h1>Dictionary</h1>
                     <p className='my-4 fs-5 text-center'>Find the exact meaning of english words!</p>
-                    <input type="text" className='w-100 bg-info rounded-2 px-2 py-1 mb-2' placeholder='find a word...'
+                    <input type="text" className='w-75 bg-info rounded-2 px-2 py-1 mb-2' placeholder='find a word...'
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}
                         onKeyDown={(e) => {
@@ -45,7 +45,7 @@ const DictionaryPage = () => {
                                getDictionaryData()
                             }
                         }}  />
-                    <button onClick={getDictionaryData} className='btn btn-info px-4 py-1 ms-2'>Find</button>
+                    <button onClick={getDictionaryData} className='btn btn-info px-4 py-1 ms-2 w-25'>Find</button>
                 </Container>
             </section>
             {
